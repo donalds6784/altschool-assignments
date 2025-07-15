@@ -13,4 +13,4 @@ This repo contains all AltSchool assignments that i will be doing throughout the
 Each branch is published individually:
 
 -   [Assignment 01 month 01](https://donalds6784.github.io/altschool-assignments/assignment-01-month-01/)
--   [Assignment 02 month 01](https://donalds6784.github.io/altschool-assignments/assignment-02-month-01/)
+-   [Assignment 02 month 01](https://donalds6784.github.io/altschool-assignments/assignment-02-month-01/table.html)
