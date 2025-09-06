@@ -1,0 +1,140 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: Arial, sans-serif;
+}
+
+li {
+	list-style: none;
+}
+
+html {
+	scroll-behavior: smooth;
+	font-size: 16px;
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+	background-color: #f4f4f4;
+	color: #333333c7;
+	line-height: 1.6;
+}
+
+.header {
+	background-color: #3aa6ee;
+	color: white;
+	padding: 1rem 0;
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+main {
+	flex: 1;
+	padding: 2rem 0;
+}
+
+.footer {
+	background-color: rgb(105, 105, 105);
+	color: white;
+	text-align: center;
+	padding: 1rem 0;
+	margin-top: auto;
+}
+hr {
+	height: 1px;
+	background: radial-gradient(circle, #3aa6ee, #3aa6ee 50%, transparent);
+	border: none;
+	margin: 1rem 0;
+	transform: scaleY(0.8);
+	transform-origin: top;
+}
+
+.container {
+	width: 90%;
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+.grid-container {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+	grid-template-rows: auto auto;
+	grid-template-areas:
+		'grid-item_profile grid-item_profile'
+		'grid-item_hobbies grid-item_aspiration';
+
+	gap: 1.5rem;
+
+	h1,
+	h2 {
+		padding-bottom: 1rem;
+		color: #3aa6ee;
+	}
+}
+
+.grid-item {
+	background: #fff;
+	padding: 1.5rem;
+	border-radius: 8px;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.grid-item_profile {
+	display: flex;
+	flex-flow: row nowrap;
+	grid-area: grid-item_profile;
+}
+
+.profile-image {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.profile-image > img {
+	border-radius: 50%;
+	width: 50%;
+	min-width: 7rem;
+}
+
+.profile-text {
+	margin-left: 1.4rem;
+
+	h1 {
+		text-transform: capitalize;
+		text-align: center;
+		margin-bottom: 1rem;
+	}
+}
+
+.grid-item_hobbies {
+	grid-area: grid-item_hobbies;
+}
+.grid-item_aspiration {
+	grid-area: grid-item_aspiration;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+	.grid-item_profile {
+		flex-direction: column;
+		align-items: center;
+	}
+	.profile-text {
+		margin-left: 0;
+		margin-top: 1rem;
+	}
+	.profile-image > img {
+		width: 70%;
+	}
+
+	.grid-container {
+		grid-template-areas:
+			'grid-item_profile'
+			'grid-item_hobbies'
+			'grid-item_aspiration';
+	}
+}
