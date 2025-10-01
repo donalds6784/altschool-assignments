@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>stop-watch app</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Major+Mono+Display&family=Rajdhani:wght@300;400;500;600;700&family=Share+Tech+Mono&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="./assets/stylesheets/main.css" />
+	</head>
+	<body>
+		<header>
+			<div class="container header-container">
+				<div class="logo">
+					<a href="./index.html">DigiWatch</a>
+				</div>
+				<div class="theme-toggle">
+					<img src="./assets/images/dark_icon.webp" alt="" />
+				</div>
+			</div>
+		</header>
+		<main>
+			<div class="container">
+				<h1 class="title">Digital Stop-Watch App</h1>
+				<div class="stop-watch">
+					<div class="laps-display">
+						<p class="laps">
+							<span class="lap-count">0</span> Laps
+						</p>
+						<button class="lap-btn">Lap</button>
+					</div>
+					<div class="timer-display">
+						<p class="time">
+							<span class="hours">00</span> :
+							<span class="minutes">00</span> :
+							<span class="seconds">00</span> :
+							<span class="milliseconds">00</span>
+						</p>
+					</div>
+					<div class="trigger-buttons">
+						<button class="start">start</button>
+						<button class="stop">stop</button>
+						<button class="reset">reset</button>
+					</div>
+				</div>
+			</div>
+		</main>
+	</body>
+</html>
