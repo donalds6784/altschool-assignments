@@ -15,8 +15,8 @@ html {
 	--primary-color: #3aa6ee;
 	--accent-hover-color: #0764a1;
 	--accent-color: #f4f4f4;
-	--secondary-color: #333333c7;
-	--bg-color: rgb(29, 2, 2); /* main content background */
+	--secondary-color: #049bd6f5;
+	--bg-color: rgb(3, 3, 19); /* main content background */
 	--page-bg: rgb(236, 238, 238); /* page background around content */
 	--text-color: #f4f4f4; /* main text color in dark theme */
 	--text-on-primary: #ffffff; /* text color used on colored buttons */
@@ -54,7 +54,9 @@ main {
 	margin: 0 auto;
 }
 
-/* Header */
+/*====================================
+			Header styles
+====================================*/
 header {
 	background-color: var(--primary-color);
 	color: var(--text-on-primary);
@@ -146,10 +148,10 @@ header .theme-toggle > img {
 	border-radius: 0.5rem;
 	cursor: pointer;
 	transition: all 0.3s ease-in-out;
+	background-color: var(--secondary-color);
 }
 
 .stop-watch .view-laps {
-	background-color: var(--secondary-color);
 	color: var(--text-color);
 }
 
