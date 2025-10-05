@@ -18,21 +18,51 @@
 				<div class="logo">
 					<a href="./index.html">DigiWatch</a>
 				</div>
-				<div class="theme-toggle">
-					<img src="./assets/images/dark_icon.webp" alt="" />
+				<div
+					class="theme-toggle"
+					role="button"
+					aria-label="Toggle theme"
+					title="Toggle theme"
+				>
+					<img
+						src="./assets/images/light_mode_icon.webp"
+						alt="Theme toggle icon"
+					/>
 				</div>
 			</div>
 		</header>
 		<main>
 			<div class="container">
 				<h1 class="title">Digital Stop-Watch App</h1>
+				<!-- Stopwatch -->
 				<div class="stop-watch">
 					<div class="laps-display">
 						<p class="laps">
 							<span class="lap-count">0</span> Laps
 						</p>
-						<button class="lap-btn">Lap</button>
+						<button class="view-laps" type="button">
+							View Laps
+						</button>
+						<button class="lap-btn" type="button">Lap</button>
 					</div>
+
+					<!-- Dialog to display all the laps -->
+					<dialog class="laps-dialog" id="laps-dialog">
+						<h2>Laps</h2>
+						<button class="close-dialog-btn" type="button">
+							X
+						</button>
+						<ul class="laps-list">
+							<!-- Laps will be appended here dynamically -->
+
+							<!-- Example lap item -->
+
+							<!-- <li class="lap-item">
+								<span class="lap-number">Lap 1:</span>
+								<span class="lap-time">00:00:00:00</span>
+							</li> -->
+						</ul>
+					</dialog>
 					<div class="timer-display">
 						<p class="time">
 							<span class="hours">00</span> :
@@ -42,12 +72,14 @@
 						</p>
 					</div>
 					<div class="trigger-buttons">
-						<button class="start">start</button>
-						<button class="stop">stop</button>
-						<button class="reset">reset</button>
+						<button class="start" type="button">start</button>
+						<button class="stop" type="button">stop</button>
+						<button class="reset" type="button">reset</button>
 					</div>
 				</div>
 			</div>
 		</main>
+
+		<script src="./assets/scripts/app.js"></script>
 	</body>
 </html>
